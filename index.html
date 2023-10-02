@@ -21,6 +21,48 @@
 		/>
 	</head>
 	<body>
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="modalLogin"
+			tabindex="-1"
+			aria-labelledby="modalLoginTitulo"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="modalLoginTitulo">
+							Entre na sua conta
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<div class="mb-3">
+							<label for="inputLoginEmail" class="form-label">Email</label>
+							<input type="email" class="form-control" id="inputLoginEmail" placeholder="example@email.com">
+						</div>
+						<div class="mb-3">
+							<label for="inputLoginPassword" class="form-label">Senha</label>
+							<input type="password" class="form-control" id="inputLoginPassword" placeholder="••••••••">
+						</div>
+						<div class="gap-3 align-items-center justify-content-center">
+							<button type="submit" class="btn btn-primary">Entrar</button>
+							<small class="text-muted">Esqueceu a senha? Clique <a href="#">aqui</a>.
+							</small>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+
 		<nav
 			class="navbar navbar-expand-md bg-body-tertiary fixed-top py-3 box-shadow"
 		>
@@ -66,7 +108,13 @@
 							<a href="contato.html" class="nav-link">Contato</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Login</a>
+							<a
+								href="#"
+								class="nav-link"
+								data-bs-toggle="modal"
+								data-bs-target="#modalLogin"
+								>Login</a
+							>
 						</li>
 						<li class="nav-item">
 							<a href="inscricao.html" class="btn btn-outline-primary ms-md-2"
@@ -159,7 +207,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-5 p-4">
+				<div class="col-lg-5 p-4 align-self-center">
 					<h1 class="display-4">Realize a viagem dos seus sonhos.</h1>
 					<p class="lead">
 						Viaje hoje mesmo com a Caravan, a agência que possui mais de 5.000
