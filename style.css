@@ -28,3 +28,10 @@ a {
 		position: relative;
 	}
 }
+
+.list-plan li + li {
+	border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+.list-plan li {
+	padding: 0.4rem;
+}
